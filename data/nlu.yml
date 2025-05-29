@@ -1,0 +1,44 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey there
+
+- intent: ask_weather
+  examples: |
+    - what's the weather in [Bangalore](location)?
+    - how's the weather in [Delhi](location)?
+    - is it raining in [Mumbai](location)?
+    - tell me the weather in [Chennai](location)
+    - [Pulivendula](location)
+    - [kadapa](location)
+    - [Rajajinagar](location)
+
+- intent: thank
+  examples: |
+    - thanks
+    - thank you
+    - thanks a lot
+    - thank you so much
+    - appreciate it
+    - thx
+    - tnx
+
+- intent: goodbye
+  examples: |
+    - bye
+    - good bye
+    - goodbye
+    - see ypu
+
+# - intent: incorrect
+#   examples: |
+#     - abcdefghigh
+#     - nvbgefvcadgvcj
+#     - nndnnhdfwjy
+#     - gstygfviurnwuikj
+#     - fghtlkntfj,hb
+#     - .,/
+#     -

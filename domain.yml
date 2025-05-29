@@ -1,0 +1,33 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_weather
+  - thank
+  - goodbye
+
+entities:
+  - location
+
+slots:
+  location:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: location
+
+responses:
+  utter_greet:
+    - text: "Hi there! Ask me about the weather in any city."
+
+  utter_goodbye:
+    - text: "Bye! Stay safe."
+
+  utter_iamabot:
+    - text: "I am a weather bot built with Rasa!"
+  utter_thank:
+    - text: "Thank you so much for your time"
+
+actions:
+  - action_get_weather
